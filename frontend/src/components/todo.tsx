@@ -1,5 +1,5 @@
 "use client"
-
+/*
 import { useState, useEffect } from "react"
 import { Calendar, ChevronDown, Clock, Filter, Flag, Inbox, Menu, Plus, Star, Trash2, Check } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -20,14 +20,12 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
 import { Label } from "@/components/ui/label"
 import { cn } from "@/lib/utils"
-import type { Task, Project } from "@/types"
-import { mockTasks, mockProjects, currentUser, getNextId, getColorHex } from "@/lib/mock-data"
+import type { Task } from "@/lib/types"
 import { format, parseISO } from "date-fns"
 
 export default function TodoView() {
   const [sidebarOpen, setSidebarOpen] = useState(true)
   const [userId, setUserId] = useState<number>(1) // Default to 1 for demo
-  const [projects, setProjects] = useState<Project[]>([])
   const [tasks, setTasks] = useState<Task[]>([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
@@ -220,7 +218,7 @@ export default function TodoView() {
 
   return (
     <div className="flex h-full">
-      {/* Sidebar */}
+      {/* Sidebar }
       <div
         className={`${
           sidebarOpen ? "w-64" : "w-0 md:w-16"
@@ -291,7 +289,7 @@ export default function TodoView() {
             </DropdownMenu>
           </div>
 
-          {/* Projects section */}
+          {/* Projects section }
           <div className="mt-6">
             <div className="flex items-center justify-between px-3 mb-2">
               {sidebarOpen && <span className="text-xs font-medium text-muted-foreground">PROJECTS</span>}
@@ -300,7 +298,7 @@ export default function TodoView() {
               </Button>
             </div>
 
-            {/* Project list */}
+            {/* Project list }
             <ScrollArea className="h-40">
               <div className="pr-2">
                 {projects.map((project) => (
@@ -324,7 +322,7 @@ export default function TodoView() {
               </div>
             </ScrollArea>
 
-            {/* Add project input */}
+            {/* Add project input 
             {isAddingProject && (
               <div className="px-3 mt-2">
                 <Input
@@ -377,9 +375,9 @@ export default function TodoView() {
         </div>
       </div>
 
-      {/* Main content */}
+      {/* Main content }
       <div className="flex-1 flex flex-col h-full overflow-hidden">
-        {/* Header */}
+        {/* Header }
         <header className="border-b p-4 flex items-center">
           <Button variant="ghost" size="icon" onClick={() => setSidebarOpen(!sidebarOpen)} className="mr-2">
             <Menu className="h-5 w-5" />
@@ -411,7 +409,7 @@ export default function TodoView() {
           </div>
         </header>
 
-        {/* Task list */}
+        {/* Task list }
         <div className="flex-1 overflow-auto p-4">
           <div className="max-w-3xl mx-auto space-y-3">
             {sortedTasks.map((task) => (
@@ -496,7 +494,7 @@ export default function TodoView() {
               </div>
             )}
 
-            {/* Add task input */}
+            {/* Add task input }
             <div className="flex items-center bg-muted/30 rounded-lg p-2">
               <Checkbox className="mr-3 opacity-50" disabled />
               <Input
@@ -518,7 +516,7 @@ export default function TodoView() {
         </div>
       </div>
 
-      {/* Task Edit Dialog */}
+      {/* Task Edit Dialog }
       <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
         <DialogContent className="sm:max-w-[500px]">
           <DialogHeader>
@@ -673,3 +671,4 @@ export default function TodoView() {
   )
 }
 
+*/

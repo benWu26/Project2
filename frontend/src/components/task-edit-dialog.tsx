@@ -1,6 +1,6 @@
-import type React from "react"
+/*import type React from "react"
 import { useState } from "react"
-import type { Task } from "@/types"
+import type { Task } from "@/lib/types"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
@@ -57,9 +57,8 @@ export default function TaskEditDialog({ task, onClose, onSave }: TaskEditDialog
     <Dialog open onOpenChange={onClose}>
       <DialogContent className="sm:max-w-[425px]">
         <DialogHeader>
-          {/*<DialogTitle>Edit Task</DialogTitle>*/}
+          {/*<DialogTitle>Edit Task</DialogTitle>}
         </DialogHeader>
-
         <form onSubmit={handleSubmit} className="space-y-4 py-4">
           <div className="space-y-2">
             <Label htmlFor="edit-title">Title *</Label>
@@ -135,3 +134,4 @@ export default function TaskEditDialog({ task, onClose, onSave }: TaskEditDialog
   )
 }
 
+*/

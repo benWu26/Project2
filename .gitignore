@@ -1,0 +1,21 @@
+# macOS system file
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.env
+.venv/
+dist/
+build/
+venv/
+
+# Node.js
+node_modules/
+
+# Logs or junk
+*.log
+
+# Ignore hidden system files
+Thumbs.db

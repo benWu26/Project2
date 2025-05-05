@@ -1,0 +1,76 @@
+{
+  "name": "task-manager",
+  "productName": "Task Manager",
+  "version": "1.0.0",
+  "description": "My Task Manager Electron Application",
+  "main": "src/main.cjs",
+  "type": "commonjs",
+  "scripts": {
+    "start": "NODE_OPTIONS=\"\" electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "lint": "echo \"No linting configured\"",
+    "build": "electron-builder build --mac ",
+    "build:mac": "electron-builder build --mac",
+    "build:win": "electron-builder build --win",
+    "build:linux": "electron-builder build --linux"
+  },
+  "keywords": [],
+  "author": {
+    "name": "benWu26",
+    "email": "wu2059@purdue.edu"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.1"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^7.8.0",
+    "@electron-forge/maker-deb": "^7.8.0",
+    "@electron-forge/maker-rpm": "^7.8.0",
+    "@electron-forge/maker-squirrel": "^7.8.0",
+    "@electron-forge/maker-zip": "^7.8.0",
+    "@electron-forge/plugin-auto-unpack-natives": "^7.8.0",
+    "@electron-forge/plugin-fuses": "^7.8.0",
+    "@electron/fuses": "^1.8.0",
+    "electron": "36.1.0",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "project.app",
+    "files": [
+      "src/**/*",
+      "dist/**/*",
+      { "from": "../frontend/dist", "to": "frontend/dist" }
+    ],
+    "mac": {
+      "target": "dmg"
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "linux": {
+      "target": "AppImage"
+    }
+  },
+  "extraResources": [
+    {
+      "from": "../frontend/dist",
+      "to": "frontend/dist"
+    },
+    {        
+    "from": "../backend/dist",
+    "to":   "backend/dist"                        
+    }
+  ],
+  "mac": {
+    "category": "public.app-category.developer-tools"
+  },
+  "win": {
+    "target": "nsis"
+  },
+  "linux": {
+    "target": "AppImage"
+  }
+}
