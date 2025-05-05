@@ -15,3 +15,7 @@ Or do this,
 Go to System Settings > Privacy & Security.
 	•	Scroll down and check if you see an “Open Anyway” button for Task Manager. Click it.
 	•	Then try opening the app again.
+
+
+
+ REACT(VITE YARN TYPE SCRIPT), ELECTRON, FASTAPI, SQLITE3
