@@ -19,3 +19,6 @@ Go to System Settings > Privacy & Security.
 
 
  REACT(VITE YARN TYPE SCRIPT), ELECTRON, FASTAPI, SQLITE3
+
+
+https://mac-page-benwu26s-projects.vercel.app/
